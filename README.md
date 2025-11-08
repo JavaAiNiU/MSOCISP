@@ -6,6 +6,10 @@ This code is the publicly available code from the paper "Lightweight RAW-to-sRGB
 
 # dataset
 
-Dataset include [ZRR](https://github.com/cszhilu1998/RAW-to-sRGB)) and [MAI](https://github.com/RenYangSCU/ISPDiffuser?tab=readme-ov-file).
+Dataset include [ZRR](https://github.com/cszhilu1998/RAW-to-sRGB) and [MAI](https://github.com/RenYangSCU/ISPDiffuser?tab=readme-ov-file).
+
+# pre-trained model
+
+The pre-trained model will be made available for download after the paper is accepted
 
 
