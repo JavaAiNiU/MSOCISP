@@ -156,9 +156,6 @@ if __name__ == '__main__':
     
     parser = argparse.ArgumentParser(description="evaluating model")
     parser.add_argument('--gpu', type=int, default=0)
-    # parser.add_argument('--data_dir', type=str, default='/root/shared-nvme/ZRR')
-    # parser.add_argument('--train_list_file', type=str, default='/root/shared-nvme/ZRR/train.txt')
-    # parser.add_argument('--test_list_file',  type=str, default='/root/shared-nvme/ZRR/test.txt')
 
     parser.add_argument('--data_dir', type=str, default='/root/shared-nvme/MAI')
     parser.add_argument('--train_list_file', type=str, default='/root/shared-nvme/MAI/data/ISP/AAAI-25/MAI_dataset/train.txt')
@@ -168,7 +165,7 @@ if __name__ == '__main__':
     parser.add_argument('--result_dir', type=str, default='/root/shared-nvme/MSOCO/test_result/trainZRR_testMAI/best_psnr_model')
     parser.add_argument('--batch_size', type=int, default=1)
     parser.add_argument('--num_workers', type=int, default=1, help='multi-threads for data loading')
-    parser.add_argument('--model', type=str, default='/root/shared-nvme/MSOCO/Results/result_MSO_CCA/ZRR/L1_WaveLoss_sum_weights/alpha_0.5_beta_0.5/last_model/ModelSnapshot_0.637718915939331_344.pth')
+    parser.add_argument('--model', type=str, default='')
     args = parser.parse_args()
 
     if not os.path.exists(args.result_dir):
