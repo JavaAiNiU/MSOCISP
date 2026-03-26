@@ -282,7 +282,7 @@ if __name__ == '__main__':
     parser.add_argument('--result_dir', type=str, default='/root/shared-nvme/MSOCO/test_result/test_MAINoduili/best_psnr_model')
     parser.add_argument('--batch_size', type=int, default=1)
     parser.add_argument('--num_workers', type=int, default=1, help='multi-threads for data loading')
-    parser.add_argument('--model', type=str, default='')
+    parser.add_argument('--model', type=str, default='')# pretrain model path
     args = parser.parse_args()
 
     if not os.path.exists(args.result_dir):

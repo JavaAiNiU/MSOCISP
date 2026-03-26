@@ -357,9 +357,10 @@ if __name__ == "__main__":
     # 【注意】移除 os.environ["CUDA_VISIBLE_DEVICES"]，让 DDP 自动分配显卡
     torch.backends.cudnn.benchmark = True
     parser = argparse.ArgumentParser()
-    parser.add_argument('--data_dir', type=str, default='/root/shared-nvme/MAI')
-    parser.add_argument('--train_list_file', type=str, default='/root/shared-nvme/MAI/data/ISP/AAAI-25/MAI_dataset/train.txt')
-    parser.add_argument('--test_list_file',  type=str, default='/root/shared-nvme/MAI/data/ISP/AAAI-25/MAI_dataset/val.txt')
+    parser.add_argument('--data_dir', type=str, default='/root/shared-nvme/ZRR')
+    parser.add_argument('--train_list_file', type=str, default='/root/shared-nvme/ZRR/train.txt')
+    parser.add_argument('--test_list_file',  type=str, default='/root/shared-nvme/ZRR/test.txt')
+    
     parser.add_argument('--train_datatype', type=str, default='train')
     parser.add_argument('--test_datatype',  type=str, default='test')
     parser.add_argument('--result_dir', type=str, default='/root/shared-nvme/MSOCO/Results/result_MSO_CCA/MAINoduili/L1_WaveLoss_PerceptualLoss')
